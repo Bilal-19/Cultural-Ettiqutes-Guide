@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 function toggleMenu() {
     const toggleBtn = document.getElementById("toggle");
@@ -18,10 +19,10 @@ export default function Header() {
                     </button>
                 </div>
                 <div id="menuOptions" className="space-x-5 flex flex-col md:flex-row items-start hidden md:block">
-                    <a href="" className="hover:text-[#00FBE6]">Home</a>
-                    <a href="" className="hover:text-[#00FBE6]">Countries</a>
-                    <a href="" className="hover:text-[#00FBE6]">Blogs</a>
-                    <a href="" className="mr-5 hover:text-[#00FBE6]">Contact</a>
+                    <Link to="/" className="hover:text-[#00FBE6]">Home</Link>
+                    <Link to="/countries" className="hover:text-[#00FBE6]">Countries</Link>
+                    <Link to="/blogs" className="hover:text-[#00FBE6]">Blogs</Link>
+                    <Link to="/contact" className="mr-5 hover:text-[#00FBE6]">Contact</Link>
                 </div>
             </div>
         </>
