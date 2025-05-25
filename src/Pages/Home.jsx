@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/header";
 import blogRecords from "../Data/blogs";
 import countryRecords from "../Data/countryRecords";
+import Footer from "../Components/Footer";
 
 export default function Home() {
     return (
@@ -34,7 +35,7 @@ export default function Home() {
             <h2 className="font-medium text-3xl md:text-5xl text-center mb-5">
                 Popular Destinations
             </h2>
-            <div className="container mx-auto grid grid-cols-5 gap-10 pb-15 md:pb-30">
+            <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 pb-15 md:pb-30">
                 {countryRecords.map((val, key) =>
                     <>
                         <div className="mx-auto">
@@ -44,6 +45,8 @@ export default function Home() {
                     </>
                 )}
             </div>
+
+            <Footer/>
         </>
     )
 }
