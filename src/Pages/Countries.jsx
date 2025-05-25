@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/header";
 import Footer from "../Components/Footer";
 import countryRecords from "../Data/countryRecords";
+import { Link } from "react-router-dom";
 
 export default function Countries() {
     return (
@@ -16,10 +17,12 @@ export default function Countries() {
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 py-15 md:py-30">
                 {countryRecords.map((val, key) =>
                     <>
-                        <div className="mx-auto size-32 p-1 hover:shadow-md border-b-4 border-x-1 border-t-1 rounded-md border-[#014976]">
-                            <img src={val.flagImage} alt={val.countryName} className="mb-2 h-20 object-cover mx-auto" />
-                            <p className="text-sm md:text-md">{val.countryName}</p>
-                        </div>
+                        <Link to={`/country/detail/${val.id}`} key={val.id}>
+                            <div className="mx-auto size-32 p-1 hover:shadow-md border-b-4 border-x-1 border-t-1 rounded-md border-[#014976]">
+                                <img src={val.flagImage} alt={val.countryName} className="mb-2 h-20 object-cover mx-auto" />
+                                <p className="text-sm md:text-md">{val.countryName}</p>
+                            </div>
+                        </Link>
                     </>
                 )}
             </div>

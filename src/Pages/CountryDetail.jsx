@@ -1,0 +1,64 @@
+import Header from "../Components/header";
+import Footer from "../Components/Footer";
+import { useParams } from "react-router-dom";
+import countryRecords from "../Data/countryRecords";
+
+export default function CountryDetail() {
+    const { id } = useParams();
+    const findCountry = countryRecords.find(val => val.id === parseInt(id));
+    console.log(findCountry.backgroundImg)
+    return (
+        <>
+            <Header />
+            <div
+                className="relative w-full h-130 bg-cover bg-no-repeat"
+                style={{ backgroundImage: `url("${findCountry.backgroundImg}")` }}
+            >
+                <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center">
+                    <h3 className="text-5xl text-white">{findCountry.countryName}</h3>
+                </div>
+            </div>
+
+            <div className="container mx-auto flex flex-row items-center justify-center space-x-3">
+                <div>
+                    <img src={findCountry.flagImage} alt={findCountry.countryName} className="size-32 object-contain" />
+                </div>
+                <div>
+                    <h4 className="font-bold text-2xl">{findCountry.countryName}</h4>
+                    <p className="text-sm">{findCountry.desc}</p>
+                </div>
+            </div>
+
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 py-15">
+                <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                    <h5 className="text-center font-medium text-2xl">Greetings</h5>
+                    <ol>
+                        {findCountry.greetings.map((val, key) => <li>{key + 1}. {val}</li>)}
+                    </ol>
+                </div>
+
+                <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                    <h5 className="text-center font-medium text-2xl">Tippings</h5>
+                    <ol>
+                        {findCountry.tippings.map((val, key) => <li>{key + 1}. {val}</li>)}
+                    </ol>
+                </div>
+
+                 <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                    <h5 className="text-center font-medium text-2xl">Dress Code</h5>
+                    <ol>
+                        {findCountry.dressCode.map((val, key) => <li>{key + 1}. {val}</li>)}
+                    </ol>
+                </div>
+
+                 <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                    <h5 className="text-center font-medium text-2xl">Taboos</h5>
+                    <ol>
+                        {findCountry.taboos.map((val, key) => <li>{key + 1}. {val}</li>)}
+                    </ol>
+                </div>
+            </div>
+            <Footer />
+        </>
+    )
+}
