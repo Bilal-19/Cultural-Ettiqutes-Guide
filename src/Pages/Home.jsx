@@ -1,13 +1,15 @@
 import React from "react";
-import Header from "../Components/header";
 import blogRecords from "../Data/blogs";
 import countryRecords from "../Data/countryRecords";
 import Footer from "../Components/Footer";
+import Header from "../Components/header";
+
+const fetchCountries = countryRecords.slice(0,5);
 
 export default function Home() {
     return (
         <>
-            <Header />
+            <Header/>
 
             <div class="w-full bg-[url('/home.png')] bg-no-repeat bg-center h-100 md:h-150 flex justify-center">
                 <h2 className="font-medium text-3xl md:text-6xl pt-5 md:pt-10">
@@ -36,7 +38,7 @@ export default function Home() {
                 Popular Destinations
             </h2>
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 pb-15 md:pb-30">
-                {countryRecords.map((val, key) =>
+                {fetchCountries.map((val, key) =>
                     <>
                         <div className="mx-auto size-32">
                             <img src={val.flagImage} alt={val.countryName} className="mb-2 h-20 object-cover" />
