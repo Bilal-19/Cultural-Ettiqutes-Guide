@@ -8,7 +8,7 @@ export default function Countries() {
     return (
         <>
             <Header />
-            <div class="w-full bg-[url('/country_banner.png')] bg-no-repeat bg-center h-100 md:h-150 flex justify-center">
+            <div class="w-full bg-[url('/country_banner.png')] bg-no-repeat bg-center h-72 md:h-150 flex justify-center">
                 <h2 className="font-medium text-3xl md:text-6xl pt-5 md:pt-10 text-white">
                     Popular Countries
                 </h2>

@@ -11,7 +11,7 @@ export default function Home() {
         <>
             <Header/>
 
-            <div class="w-full bg-[url('/home.png')] bg-no-repeat bg-center h-100 md:h-150 flex justify-center">
+            <div class="w-full bg-[url('/home.png')] bg-no-repeat bg-center h-72 md:h-150 flex justify-center">
                 <h2 className="font-medium text-3xl md:text-6xl pt-5 md:pt-10">
                     Travel Respectfully.
                     <br />

@@ -11,7 +11,7 @@ export default function CountryDetail() {
         <>
             <Header />
             <div
-                className="relative w-full h-130 bg-cover bg-no-repeat"
+                className="relative w-full h-72 md:h-130 bg-cover bg-no-repeat"
                 style={{ backgroundImage: `url("${findCountry.backgroundImg}")` }}
             >
                 <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center">
@@ -19,39 +19,39 @@ export default function CountryDetail() {
                 </div>
             </div>
 
-            <div className="container mx-auto flex flex-row items-center justify-center space-x-3">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:space-x-3">
                 <div>
                     <img src={findCountry.flagImage} alt={findCountry.countryName} className="size-32 object-contain" />
                 </div>
-                <div>
+                <div className="m-5 md:m-0">
                     <h4 className="font-bold text-2xl">{findCountry.countryName}</h4>
                     <p className="text-sm">{findCountry.desc}</p>
                 </div>
             </div>
 
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 py-15">
-                <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5 m-5 md:m-0">
                     <h5 className="text-center font-medium text-2xl">Greetings</h5>
                     <ol>
                         {findCountry.greetings.map((val, key) => <li>{key + 1}. {val}</li>)}
                     </ol>
                 </div>
 
-                <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5 m-5 md:m-0">
                     <h5 className="text-center font-medium text-2xl">Tippings</h5>
                     <ol>
                         {findCountry.tippings.map((val, key) => <li>{key + 1}. {val}</li>)}
                     </ol>
                 </div>
 
-                 <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                 <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5 m-5 md:m-0">
                     <h5 className="text-center font-medium text-2xl">Dress Code</h5>
                     <ol>
                         {findCountry.dressCode.map((val, key) => <li>{key + 1}. {val}</li>)}
                     </ol>
                 </div>
 
-                 <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5">
+                 <div className="border-b-4 border-t-1 border-x-1 border-[#014976] rounded-md p-5 m-5 md:m-0">
                     <h5 className="text-center font-medium text-2xl">Taboos</h5>
                     <ol>
                         {findCountry.taboos.map((val, key) => <li>{key + 1}. {val}</li>)}
