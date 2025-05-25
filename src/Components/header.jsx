@@ -17,7 +17,7 @@ export default function Header() {
                         <i class="fa-solid fa-sliders"></i>
                     </button>
                 </div>
-                <div id="menuOptions" className="space-x-5 flex flex-col md:flex-row items-end hidden md:block">
+                <div id="menuOptions" className="space-x-5 flex flex-col md:flex-row items-start hidden md:block">
                     <a href="" className="hover:text-[#00FBE6]">Home</a>
                     <a href="" className="hover:text-[#00FBE6]">Countries</a>
                     <a href="" className="hover:text-[#00FBE6]">Blogs</a>
