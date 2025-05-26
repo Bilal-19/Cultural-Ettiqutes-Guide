@@ -6,7 +6,7 @@ import Header from "../Components/header";
 import { Link } from "react-router-dom";
 
 const fetchCountries = countryRecords.slice(0, 5);
-const fetchBlogs = blogRecords.slice(0,3);
+const fetchBlogs = blogRecords.slice(0, 3);
 
 export default function Home() {
     return (
@@ -28,9 +28,11 @@ export default function Home() {
                 {fetchBlogs.map((val, key) =>
                     <>
                         <div className="mx-auto w-80 md:w-auto">
-                            <img src={val.thumbnailPath} alt={val.blogTitle} className="rounded-lg"/>
+                            <img src={val.thumbnailPath} alt={val.blogTitle} className="rounded-lg" />
                             <p className="text-md md:text-lg font-medium">{val.blogTitle}</p>
-                            <a href="" className="font-light">Read more</a>
+                            <Link to={`/blog/detail/${val.id}`} className="font-light">
+                                Read more
+                            </Link>
                         </div>
                     </>
                 )}
