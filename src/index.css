@@ -1,3 +1,8 @@
 body{
   font-family: "Montserrat", sans-serif;
 }
+
+a.active{
+  color: #00FBE6;
+  font-weight: 500;
+}

@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 function toggleMenu() {
     const toggleBtn = document.getElementById("toggle");
@@ -11,18 +10,20 @@ function toggleMenu() {
 export default function Header() {
     return (
         <>
-            <div className="w-full bg-[#014976] text-white md:h-14 flex flex-col md:flex-row md:items-center justify-between">
+            <div className="w-full bg-[#014976] text-white py-2 md:h-15 flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex flex-row justify-between">
-                    <img src="/logo.png" alt="" />
+                    <Link to="/">
+                        <p className="ml-2"><i class="fa-solid fa-globe"></i> Cultural Ettiqutes Guide</p>
+                    </Link>
                     <button id="toggle" className="block md:hidden mr-5 hover:cursor-pointer" onClick={() => toggleMenu()}>
                         <i class="fa-solid fa-sliders"></i>
                     </button>
                 </div>
-                <div id="menuOptions" className="space-x-5 flex flex-col md:flex-row items-start hidden md:block">
-                    <Link to="/" className="hover:text-[#00FBE6]">Home</Link>
-                    <Link to="/countries" className="hover:text-[#00FBE6]">Countries</Link>
-                    <Link to="/blogs" className="hover:text-[#00FBE6]">Blogs</Link>
-                    <Link to="/contact" className="mr-5 hover:text-[#00FBE6]">Contact</Link>
+                <div id="menuOptions" className="space-x-5 flex flex-col md:flex-row items-start hidden md:block space-y-2 md:space-y-0">
+                    <NavLink to="/" className="hover:text-[#00FBE6] ml-2 md:ml-0">Home</NavLink>
+                    <NavLink to="/countries" className="hover:text-[#00FBE6] ml-2 md:ml-0">Countries</NavLink>
+                    <NavLink to="/blogs" className="hover:text-[#00FBE6] ml-2 md:ml-0">Blogs</NavLink>
+                    <NavLink to="/contact" className="mr-5 hover:text-[#00FBE6] ml-2 md:ml-0">Contact</NavLink>
                 </div>
             </div>
         </>
