@@ -41,7 +41,7 @@ export default function Home() {
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 pb-15 md:pb-30">
                 {fetchCountries.map((val, key) =>
                     <>
-                        <Link to={`/country/detail/${val.id}`} target="_blank">
+                        <Link to={`/country/detail/${val.id}`}>
                             <div className="mx-auto size-32">
                                 <img src={val.flagImage} alt={val.countryName} className="mb-2 h-20 object-cover" />
                                 <p className="text-sm md:text-md">{val.countryName}</p>

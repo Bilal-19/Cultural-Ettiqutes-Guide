@@ -15,7 +15,7 @@ export default function CountryDetail() {
                 style={{ backgroundImage: `url("${findCountry.backgroundImg}")` }}
             >
                 <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center">
-                    <h3 className="text-5xl text-white">{findCountry.countryName}</h3>
+                    <h3 className="text-2xl md:text-5xl text-white">{findCountry.countryName}</h3>
                 </div>
             </div>
 
