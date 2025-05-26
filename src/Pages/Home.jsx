@@ -13,12 +13,14 @@ export default function Home() {
         <>
             <Header />
 
-            <div class="w-full bg-[url('/home.png')] bg-no-repeat bg-center h-72 md:h-150 flex justify-center">
-                <h2 className="font-medium text-3xl md:text-6xl pt-5 md:pt-10">
-                    Travel Respectfully.
-                    <br />
-                    Connect Meaningfully.
-                </h2>
+            <div class="relative w-full bg-[url('/home.jpg')] bg-no-repeat bg-center h-72 md:h-150">
+                <div class="absolute inset-0 bg-black/40 flex justify-center">
+                    <h2 className="font-medium text-3xl md:text-6xl pt-5 md:pt-10 text-white">
+                        Travel Respectfully.
+                        <br />
+                        Connect Meaningfully.
+                    </h2>
+                </div>
             </div>
 
             <h2 className="font-medium text-3xl md:text-5xl text-center pt-15 md:pt-30 mb-5">

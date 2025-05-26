@@ -1,4 +1,4 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 
 export default function Footer() {
@@ -23,11 +23,10 @@ export default function Footer() {
                 <div>
                     <h4 className="font-bold text-xl md:text-2xl">Quick Links</h4>
                     <div className="flex flex-col font-light">
-                        <a href="">Home</a>
-                        <a href="">Countries</a>
-                        <a href="">Travel Tips</a>
-                        <a href="">Blogs</a>
-                        <a href="">Contact Us</a>
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/countries">Countries</NavLink>
+                        <NavLink to="/blogs">Blogs</NavLink>
+                        <NavLink to="/contact">Contact Us</NavLink>
                     </div>
                 </div>
 
