@@ -8,7 +8,7 @@ export default function Blogs() {
     return (
         <>
             <Header />
-            <div class="w-full bg-[url('/blog.png')] bg-no-repeat bg-center h-72 md:h-190">
+            <div class="w-full bg-[url('/blog.png')] bg-no-repeat bg-cover h-60 md:h-160">
             </div>
 
             <h2 className="font-medium text-3xl md:text-5xl text-center pt-15 md:pt-30 mb-5">
