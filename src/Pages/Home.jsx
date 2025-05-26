@@ -26,7 +26,7 @@ export default function Home() {
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 pb-15 md:pb-30">
                 {blogRecords.map((val, key) =>
                     <>
-                        <div className="mx-auto w-70 md:w-auto">
+                        <div className="mx-auto w-80 md:w-auto">
                             <img src={val.thumbnailPath} alt={val.blogTitle} />
                             <p className="text-md md:text-lg">{val.blogTitle}</p>
                             <a href="" className="font-light">Read more</a>

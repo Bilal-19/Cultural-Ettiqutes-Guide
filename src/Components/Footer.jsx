@@ -6,8 +6,8 @@ export default function Footer() {
         <>
             <div class="w-full bg-[#014976] text-white flex flex-col md:flex-row justify-around p-5 md:p-10 space-y-5 md:space-y-0">
                 <div>
-                    <h4 className="font-bold text-2xl">Follow Us On Social Media</h4>
-                    <div className="text-2xl flex flex-row space-x-3">
+                    <h4 className="font-bold text-xl md:text-2xl">Follow Us On Social Media</h4>
+                    <div className="text-md md:text-2xl flex flex-row space-x-3">
                         <a href="">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="font-bold text-2xl">Quick Links</h4>
+                    <h4 className="font-bold text-xl md:text-2xl">Quick Links</h4>
                     <div className="flex flex-col font-light">
                         <a href="">Home</a>
                         <a href="">Countries</a>
@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h4 className="font-bold text-2xl">Newsletter</h4>
+                    <h4 className="font-bold text-xl md:text-2xl">Newsletter</h4>
                     <p className="font-light text-md mb-2">Stay up to date with our latest news</p>
                     <form action="" className="space-y-2">
                         <input type="text" className="bg-white rounded-md text-black px-3 py-1 block focus:outline-none" placeholder="Enter your first name" />
