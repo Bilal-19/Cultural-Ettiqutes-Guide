@@ -213,7 +213,7 @@ const countryRecords = [
         id: 7,
         flagImage: "/Flags/Brazil.webp",
         countryName: "Brazil",
-        backgroundImg: "/CountryBanners/Brazil.png",
+        backgroundImg: "https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Brazil is famous for its vibrant culture, Carnival festival, football passion, and vast Amazon rainforest. It is a melting pot of indigenous, Portuguese, African, and other influences.",
         greetings: [
             "Olá: Hello",
@@ -248,7 +248,7 @@ const countryRecords = [
         id: 8,
         flagImage: "/Flags/Japan.webp",
         countryName: "Japan",
-        backgroundImg: "/CountryBanners/Japan.png",
+        backgroundImg: "https://images.pexels.com/photos/1510595/pexels-photo-1510595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Japan is a country known for its blend of ancient traditions and cutting-edge technology. It has a rich cultural heritage with tea ceremonies, anime, and cherry blossoms.",
         greetings: [
             "Konnichiwa: Hello / Good afternoon",
@@ -283,7 +283,7 @@ const countryRecords = [
         id: 9,
         flagImage: "/Flags/China.webp",
         countryName: "China",
-        backgroundImg: "/CountryBanners/China.png",
+        backgroundImg: "https://images.pexels.com/photos/19885/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "China is a land of diverse cultures, languages, and traditions. Known for its historical monuments, festivals, and spiritual heritage, it has a vibrant and colorful society.",
         greetings: [
             "你好 (Nǐ hǎo): Hello",
@@ -314,7 +314,7 @@ const countryRecords = [
         id: 10,
         flagImage: "/Flags/Italy.webp",
         countryName: "Italy",
-        backgroundImg: "/CountryBanners/Italy.png",
+        backgroundImg: "https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Italy is famous for its rich history, art, cuisine, and fashion. Italian culture is warm and expressive, with strong family ties and appreciation for traditions.",
         greetings: [
             "Ciao: Hi / Bye (informal)",
@@ -348,7 +348,7 @@ const countryRecords = [
         id: 11,
         flagImage: "/Flags/Spain.webp",
         countryName: "Spain",
-        backgroundImg: "/CountryBanners/Spain.png",
+        backgroundImg: "https://images.pexels.com/photos/3757144/pexels-photo-3757144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Spain is known for its rich history, vibrant culture, flamenco music, and delicious cuisine. Famous cities include Madrid, Barcelona, and Seville. Spain celebrates numerous festivals like La Tomatina and Running of the Bulls. The Spanish lifestyle is generally relaxed and social.",
         greetings: [
             "Hola: Standard informal greeting",
@@ -383,14 +383,14 @@ const countryRecords = [
         id: 12,
         flagImage: "/Flags/SouthKorea.webp",
         countryName: "South Korea",
-        backgroundImg: "/CountryBanners/SouthKorea.png",
+        backgroundImg: "https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "South Korea is a technologically advanced country known for its pop culture (K-pop), traditional palaces, and delicious cuisine like kimchi and bibimbap. It values respect, harmony, and hierarchy in social and business interactions.",
         greetings: [
-            "안녕하세요 (Annyeonghaseyo): Formal hello",
-            "안녕 (Annyeong): Casual hello/goodbye",
-            "처음 뵙겠습니다 (Cheoeum boepgesseumnida): Nice to meet you (formal)",
-            "감사합니다 (Gamsahamnida): Thank you (formal)",
-            "잘 가요 (Jal gayo): Goodbye (casual)"
+            "Annyeonghaseyo: Formal hello",
+            "Annyeong: Casual hello/goodbye",
+            "Cheoeum boepgesseumnida: Nice to meet you (formal)",
+            "Gamsahamnida: Thank you (formal)",
+            "Jal gayo: Goodbye (casual)"
         ],
         tippings: [
             "Tipping is generally not practiced and can sometimes be considered rude.",
@@ -417,7 +417,7 @@ const countryRecords = [
         id: 13,
         flagImage: "/Flags/Mexico.webp",
         countryName: "Mexico",
-        backgroundImg: "/CountryBanners/Mexico.png",
+        backgroundImg: "https://images.pexels.com/photos/604661/pexels-photo-604661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Mexico is rich in culture, history, and cuisine. Known for its vibrant festivals like Día de los Muertos, and natural wonders like cenotes and beaches. Family, tradition, and religion play an important role in daily life.",
         greetings: [
             "Hola: Hello",
@@ -452,7 +452,7 @@ const countryRecords = [
         id: 14,
         flagImage: "/Flags/Ireland.webp",
         countryName: "Ireland",
-        backgroundImg: "/CountryBanners/Ireland.png",
+        backgroundImg: "https://images.pexels.com/photos/1650870/pexels-photo-1650870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Ireland is known for its lush green landscapes, rich Celtic history, and warm hospitality. It is famous for its music, literature, and folklore, as well as landmarks like the Cliffs of Moher and the Giant's Causeway.",
         greetings: [
             "Hello / Hi: Common informal greetings",
@@ -487,7 +487,7 @@ const countryRecords = [
         id: 15,
         flagImage: "/Flags/Switzerland.webp",
         countryName: "Switzerland",
-        backgroundImg: "/CountryBanners/Switzerland.png",
+        backgroundImg: "https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         desc: "Switzerland is famous for its stunning Alpine scenery, precision watches, and neutrality in global politics. It is home to multiple languages and rich cultural diversity, emphasizing punctuality and cleanliness.",
         greetings: [
             "Grüezi: Hello (Swiss German)",

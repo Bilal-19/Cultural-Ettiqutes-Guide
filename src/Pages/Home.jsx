@@ -3,13 +3,14 @@ import blogRecords from "../Data/blogs";
 import countryRecords from "../Data/countryRecords";
 import Footer from "../Components/Footer";
 import Header from "../Components/header";
+import { Link } from "react-router-dom";
 
-const fetchCountries = countryRecords.slice(0,5);
+const fetchCountries = countryRecords.slice(0, 5);
 
 export default function Home() {
     return (
         <>
-            <Header/>
+            <Header />
 
             <div class="w-full bg-[url('/home.png')] bg-no-repeat bg-center h-72 md:h-150 flex justify-center">
                 <h2 className="font-medium text-3xl md:text-6xl pt-5 md:pt-10">
@@ -40,15 +41,17 @@ export default function Home() {
             <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 pb-15 md:pb-30">
                 {fetchCountries.map((val, key) =>
                     <>
-                        <div className="mx-auto size-32">
-                            <img src={val.flagImage} alt={val.countryName} className="mb-2 h-20 object-cover" />
-                            <p className="text-sm md:text-md">{val.countryName}</p>
-                        </div>
+                        <Link to={`/country/detail/${val.id}`} target="_blank">
+                            <div className="mx-auto size-32">
+                                <img src={val.flagImage} alt={val.countryName} className="mb-2 h-20 object-cover" />
+                                <p className="text-sm md:text-md">{val.countryName}</p>
+                            </div>
+                        </Link>
                     </>
                 )}
             </div>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
